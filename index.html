@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#160f0a">
+<meta property="og:title" content="Undangan Pernikahan Hafid & Rahma">
+<meta property="og:description" content="Muhammad Hafid Qur'anan & Rahma Devianti Alfariza">
+<title>Undangan Pernikahan Hafid & Rahma</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@400;500;600&display=swap');
+*{box-sizing:border-box} html,body{margin:0;width:100%;height:100%;overflow:hidden}
+body{font-family:Montserrat,system-ui,sans-serif;background:#100b08;color:#fff}
+.app{position:relative;width:100%;height:100%;overflow:hidden;background:#17100c}
+.bg{position:absolute;inset:-5%;background:
+linear-gradient(180deg,rgba(20,11,7,.78),rgba(20,11,7,.88)),
+url("assets/foto-pengantin.png") center/cover no-repeat;filter:blur(1px);transform:scale(1.06);opacity:.48}
+.glow{position:absolute;width:55vw;height:55vw;border-radius:50%;background:radial-gradient(circle,rgba(202,157,73,.23),transparent 68%);top:-15vw;left:-15vw;animation:float 9s ease-in-out infinite}
+.glow2{position:absolute;width:60vw;height:60vw;border-radius:50%;background:radial-gradient(circle,rgba(142,92,40,.16),transparent 70%);bottom:-25vw;right:-20vw;animation:float2 12s ease-in-out infinite}
+@keyframes float{50%{transform:translate(7vw,8vh) scale(1.1)}} @keyframes float2{50%{transform:translate(-6vw,-6vh) scale(1.08)}}
+.petals{position:absolute;inset:0;pointer-events:none;overflow:hidden}
+.petal{position:absolute;top:-10vh;width:8px;height:12px;border-radius:70% 20% 70% 20%;background:rgba(213,171,91,.5);animation:fall linear infinite;filter:blur(.2px)}
+@keyframes fall{to{transform:translate3d(var(--x),115vh,0) rotate(540deg);opacity:.05}}
+.gold{color:#e6c57b}.serif{font-family:"Cormorant Garamond",serif}
+.slides{position:relative;height:100%;width:100%;transition:transform .75s cubic-bezier(.22,.8,.2,1);z-index:2}
+.slide{height:100%;width:100%;display:flex;align-items:center;justify-content:center;padding:30px 22px}
+.card{width:min(92vw,560px);max-height:92vh;overflow:auto;text-align:center;padding:34px 24px;border:1px solid rgba(230,197,123,.34);border-radius:28px;background:rgba(24,15,10,.56);backdrop-filter:blur(12px);box-shadow:0 20px 70px rgba(0,0,0,.35)}
+.orn{font-size:28px;letter-spacing:10px;color:#dcb86d;margin-bottom:16px}
+.kicker{font-size:11px;letter-spacing:4px;text-transform:uppercase;color:#d9bf8a}
+h1,h2{font-family:"Cormorant Garamond",serif;font-weight:600;margin:8px 0}
+h1{font-size:clamp(46px,13vw,82px);line-height:.9}
+h2{font-size:clamp(42px,11vw,68px);line-height:.95}
+.names{font-size:clamp(23px,6vw,34px);line-height:1.1}
+.amp{font-family:"Cormorant Garamond",serif;font-size:32px;color:#d8b66c;margin:10px}
+.parents{font-size:12px;line-height:1.8;color:#dfd4c4;margin-top:14px}
+.quote{font-family:"Cormorant Garamond",serif;font-size:clamp(21px,5.6vw,29px);line-height:1.35;color:#f3eadb}
+.source{font-size:11px;letter-spacing:2px;color:#dcb86d;margin-top:15px}
+.date{font-family:"Cormorant Garamond",serif;font-size:42px;color:#efd28a;margin:12px 0}
+.small{font-size:12px;color:#cfc2b1;line-height:1.7}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;margin-top:20px;padding:13px 20px;border-radius:999px;border:1px solid #d7b56b;background:linear-gradient(135deg,#d9b66d,#a77937);color:#1b1109;text-decoration:none;font-weight:600;font-size:12px;box-shadow:0 8px 25px rgba(194,145,61,.22)}
+.photo{width:170px;height:170px;border-radius:50%;object-fit:cover;object-position:center 32%;border:2px solid #d9b76c;padding:5px;background:#24170d;box-shadow:0 0 0 8px rgba(217,183,108,.08),0 18px 40px rgba(0,0,0,.35);margin-bottom:20px}
+.count{display:flex;justify-content:center;gap:8px;margin:22px 0 8px}
+.box{min-width:66px;padding:10px 5px;border:1px solid rgba(230,197,123,.28);border-radius:15px;background:rgba(255,255,255,.045)}
+.num{font-family:"Cormorant Garamond",serif;font-size:31px;color:#efd28a}.lab{font-size:8px;letter-spacing:1px;color:#bfb2a2}
+.nav{position:absolute;z-index:5;bottom:22px;left:50%;transform:translateX(-50%);display:flex;align-items:center;gap:7px}
+.dot{width:7px;height:7px;border-radius:50%;background:rgba(255,255,255,.25);transition:.3s}.dot.active{width:24px;border-radius:9px;background:#dcb86d}
+.hint{position:absolute;z-index:5;right:17px;bottom:19px;font-size:9px;color:rgba(255,255,255,.55);letter-spacing:1px}
+.music{position:absolute;z-index:6;top:18px;right:18px;width:40px;height:40px;border-radius:50%;border:1px solid rgba(230,197,123,.45);background:rgba(20,12,8,.65);color:#e5c27b;font-size:17px}
+.open{cursor:pointer}
+@media(min-width:700px){.card{padding:44px 42px}.photo{width:210px;height:210px}}
+</style>
+</head>
+<body>
+<div class="app">
+  <div class="bg"></div><div class="glow"></div><div class="glow2"></div><div class="petals" id="petals"></div>
+  <audio id="music" loop preload="auto"><source src="assets/lagu.mp3" type="audio/mpeg"></audio>
+  <button class="music" id="musicBtn" aria-label="Putar musik">♫</button>
+
+  <main class="slides" id="slides">
+    <section class="slide">
+      <div class="card">
+        <div class="orn">✦ ❖ ✦</div>
+        <div class="kicker">Undangan Pernikahan</div>
+        <h1 class="gold">Hafid<br>&amp; Rahma</h1>
+        <p class="small">Dengan penuh rasa syukur, kami mengundang Bapak/Ibu/Saudara/i untuk hadir dan menjadi bagian dari hari bahagia kami.</p>
+        <button class="btn open" onclick="next()">Buka Undangan ✦</button>
+      </div>
+    </section>
+
+    <section class="slide">
+      <div class="card">
+        <div class="orn">❖</div>
+        <div class="quote">“Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan pasangan-pasangan untukmu dari jenismu sendiri, agar kamu cenderung dan merasa tenteram kepadanya, dan Dia menjadikan di antaramu rasa kasih dan sayang. Sungguh, pada yang demikian itu benar-benar terdapat tanda-tanda (kebesaran Allah) bagi kaum yang berpikir.”</div>
+        <div class="source">QS. AR-RUM : 21</div>
+      </div>
+    </section>
+
+    <section class="slide">
+      <div class="card">
+        <img class="photo" src="assets/foto-pengantin.png" alt="Muhammad Hafid Qur'anan dan Rahma Devianti Alfariza">
+        <div class="kicker">Mempelai</div>
+        <div class="names serif gold">Muhammad Hafid Qur'anan</div>
+        <div class="parents">Putra dari<br><b>Mochamad Anwari</b> &amp; <b>Qurotul Aini</b></div>
+        <div class="amp">&amp;</div>
+        <div class="names serif gold">Rahma Devianti Alfariza</div>
+        <div class="parents">Putri dari<br><b>Bawon Kasian</b> &amp; <b>Sunariyah</b></div>
+      </div>
+    </section>
+
+    <section class="slide">
+      <div class="card">
+        <div class="orn">✦</div>
+        <div class="kicker">Hari Bahagia Kami</div>
+        <div class="date">18 Oktober 2026</div>
+        <p class="small">Bertempat di kediaman mempelai pria</p>
+        <a class="btn" href="https://maps.app.goo.gl/rTBNLiSZyAnSGAcUA?g_st=aw" target="_blank" rel="noopener">⌖ Buka Lokasi</a>
+      </div>
+    </section>
+
+    <section class="slide">
+      <div class="card">
+        <div class="orn">❖</div>
+        <div class="kicker">Menuju Hari Bahagia</div>
+        <h2 class="gold">Countdown</h2>
+        <div class="count">
+          <div class="box"><div class="num" id="d">0</div><div class="lab">HARI</div></div>
+          <div class="box"><div class="num" id="h">0</div><div class="lab">JAM</div></div>
+          <div class="box"><div class="num" id="m">0</div><div class="lab">MENIT</div></div>
+          <div class="box"><div class="num" id="s">0</div><div class="lab">DETIK</div></div>
+        </div>
+        <p class="small">Sampai jumpa di hari penuh cinta dan keberkahan.</p>
+      </div>
+    </section>
+
+    <section class="slide">
+      <div class="card">
+        <div class="orn">✦ ❖ ✦</div>
+        <div class="kicker">Terima Kasih</div>
+        <h2 class="gold">Hafid &amp; Rahma</h2>
+        <p class="small">Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i berkenan hadir dan memberikan doa restu.</p>
+        <div class="date" style="font-size:32px">18 • 10 • 2026</div>
+        <button class="btn" onclick="go(0)">↻ Buka dari Awal</button>
+      </div>
+    </section>
+  </main>
+
+  <div class="nav" id="nav"></div>
+  <div class="hint">KETUK / GESER UNTUK PINDAH</div>
+</div>
+<script>
+const slides=document.getElementById('slides'), nav=document.getElementById('nav'), total=6;
+let idx=0,startX=0;
+for(let i=0;i<total;i++){const d=document.createElement('span');d.className='dot'+(i===0?' active':'');d.onclick=()=>go(i);nav.appendChild(d)}
+function go(i){idx=Math.max(0,Math.min(total-1,i));slides.style.transform=`translateY(-${idx*100}%)`;[...nav.children].forEach((d,n)=>d.classList.toggle('active',n===idx))}
+function next(){go(idx+1)}
+document.querySelector('.app').addEventListener('click',e=>{if(e.target.closest('button,a'))return;if(idx<total-1)next()});
+document.addEventListener('touchstart',e=>startX=e.touches[0].clientX,{passive:true});
+document.addEventListener('touchend',e=>{let dx=e.changedTouches[0].clientX-startX;if(Math.abs(dx)>45){if(dx<0)next();else go(idx-1)}},{passive:true});
+const music=document.getElementById('music'), musicBtn=document.getElementById('musicBtn');
+function playMusic(){music.play().then(()=>{musicBtn.textContent='♫'}).catch(()=>{})}
+document.querySelector('.open').addEventListener('click',playMusic);
+musicBtn.onclick=()=>{if(music.paused){playMusic()}else{music.pause();musicBtn.textContent='♪'}};
+function countdown(){
+ const target=new Date('2026-10-18T00:00:00+07:00').getTime(), now=Date.now(), diff=Math.max(0,target-now);
+ const days=Math.floor(diff/86400000), hours=Math.floor(diff%86400000/3600000), mins=Math.floor(diff%3600000/60000), secs=Math.floor(diff%60000/1000);
+ d.textContent=days;h.textContent=String(hours).padStart(2,'0');m.textContent=String(mins).padStart(2,'0');s.textContent=String(secs).padStart(2,'0');
+} countdown(); setInterval(countdown,1000);
+const p=document.getElementById('petals');
+for(let i=0;i<18;i++){let x=document.createElement('i');x.className='petal';x.style.left=Math.random()*100+'%';x.style.animationDuration=(7+Math.random()*9)+'s';x.style.animationDelay=(-Math.random()*12)+'s';x.style.setProperty('--x',(Math.random()*24-12)+'vw');p.appendChild(x)}
+</script>
+</body>
+</html>
